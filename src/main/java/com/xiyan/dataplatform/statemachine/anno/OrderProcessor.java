@@ -4,6 +4,9 @@ import org.springframework.stereotype.Component;
 
 import java.lang.annotation.*;
 
+/**
+ * @author wrmu
+ */
 @Target({ElementType.TYPE})
 @Retention(RetentionPolicy.RUNTIME)
 @Documented
@@ -14,6 +17,10 @@ public @interface OrderProcessor {
      * 指定状态，state不能同时存在
      */
     String[] state() default {};
+    /**
+     * 订单操作事件
+     */
+    String event();
     /**
      * 业务
      */

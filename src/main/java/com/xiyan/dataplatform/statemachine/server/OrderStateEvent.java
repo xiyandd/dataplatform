@@ -1,5 +1,8 @@
 package com.xiyan.dataplatform.statemachine.server;
 
+/**
+ * @author wrmu
+ */
 public interface  OrderStateEvent {
     /**
      * 订单状态事件
